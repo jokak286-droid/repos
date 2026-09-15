@@ -1,5 +1,8 @@
 var myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!"; 
+
+var myText = document.querySelector("p");
+var myList = document.querySelector("li");
+
 alert("hello!");
 
 
@@ -10,7 +13,12 @@ function setUserName() {
   var myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
   myHeading.textContent = "Hello, " + myName;
+  myText.textContent = "This site is about pizzas. Now are cooking:"
+  myList.textContent = "pepperoni L"
 }
+
+
+
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
