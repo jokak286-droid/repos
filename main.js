@@ -13,8 +13,8 @@ function setUserName() {
   var myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
   myHeading.textContent = "Hello, " + myName;
-  myText.textContent = "This site is about pizzas. Now are cooking:"
-  myList.textContent = "pepperoni L"
+  myText.textContent = "This site is about pizzas. Now are cooking:";
+  myList.textContent = "pepperoni L";
 }
 
 
